@@ -1,0 +1,11 @@
+{
+  "name": "eurelis/paragraphs_commons",
+  "description": "A basic set of Drupal 8 paragraphs used in most of our client sites.",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Alexandre Amiche (morsok)",
+      "email": "a.amiche@eurelis.com"
+    }
+  ]
+}
