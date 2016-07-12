@@ -1,0 +1,26 @@
+{%
+set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+]
+%}
+
+<div class="row">
+	<div class="column paragraphRich">
+		{% if illustration %}
+			<div class="columns medium-6 {{ class_position }}">
+				<img src="{{ illustration }}" alt="">
+			</div>
+
+			<div class="columns medium-6">
+				<h3 class="title titleIllustration">{{ title }}</h3>
+				{{ text|raw }}
+			</div>
+		{% else %}
+			<h3 class="title text-center">{{ title }}</h3>
+			<p class="intro text-center">{{ subtitle }}</p>
+			{{ text|raw }}
+		{% endif %}
+	</div>
+</div>

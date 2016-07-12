@@ -1,0 +1,21 @@
+{%
+set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+]
+%}
+
+<div class="row">
+	<div class="column">
+		<h3 class="title text-center">{{ title }}</h3>
+
+		<ul class="listDownload">
+			{% for document in liste_documents %}
+				<li class="downloadItem">
+					<a href="{{ document.url }}" class="downloadLink" type="{{ document.mime }}" target="_blank">{{ document.description }} <span class="sizeItem right">{{ document.size }}</span></a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

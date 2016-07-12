@@ -1,0 +1,28 @@
+{%
+set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+]
+%}
+
+	
+{% set accordionId = 0 %}
+
+<div class="row">
+	<div class="column">
+		<h3 class="title text-center">{{ title }}</h3>
+
+		<p class="intro text-center">{{ subtitle }}</p>
+
+		<ul class="accordion" data-accordion>
+			{% for accordeon in liste_accordeons %}
+			    <li class="accordion-navigation">
+					<a href="#accordion{{ accordionId }}" class="accordionLink">{{ accordeon.title }}</a>
+					<div id="accordion{{ accordionId }}" class="content accordionContent">{{ accordeon.text|raw }}</div>
+				</li>
+				{% set accordionId = accordionId + 1 %}
+			{% endfor %}
+		</ul>
+	</div>
+</div>

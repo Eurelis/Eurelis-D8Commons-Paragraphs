@@ -1,0 +1,14 @@
+{%
+set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+]
+%}
+
+<div class="row">
+	<div class="column paragraphRich encartCitation">
+		<h3 class="title text-center">{{ title }}</h3>
+		<p class="text-center citation">{{ citation }}</p>
+	</div>
+</div>
