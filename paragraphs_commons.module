@@ -3,6 +3,30 @@
 use Drupal\image\Entity\ImageStyle;
 
 /**
+ * Implements hook_theme.
+ */
+function paragraphs_commons_theme() {
+  return [
+    'paragraph__liste_accordeons' => [
+      'render element' => 'elements',
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__encart_citation' => [
+      'render element' => 'elements',
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__texte_illustre' => [
+      'render element' => 'elements',
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__liste_documents' => [
+      'render element' => 'elements',
+      'base hook' => 'paragraph',
+    ],
+  ];
+}
+
+/**
  * Implements template_preprocess_paragraphs().
  */
 function paragraphs_commons_preprocess_paragraph__liste_accordeons(&$variables) {
