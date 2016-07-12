@@ -1,0 +1,36 @@
+uuid: 34297228-eb73-4fee-8a51-49b8c9b59586
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.liste_documents.field_document
+    - field.field.paragraph.liste_documents.field_title
+    - paragraphs.paragraphs_type.liste_documents
+  module:
+    - file
+id: paragraph.liste_documents.default
+targetEntityType: paragraph
+bundle: liste_documents
+mode: default
+content:
+  field_document:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  translation:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

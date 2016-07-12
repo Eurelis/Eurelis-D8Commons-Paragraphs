@@ -1,0 +1,46 @@
+uuid: 6e97610b-3d53-4f58-8611-c7b7d41ef4f0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.liste_accordeons.field_accordeons
+    - field.field.paragraph.liste_accordeons.field_subtitle
+    - field.field.paragraph.liste_accordeons.field_title
+    - paragraphs.paragraphs_type.liste_accordeons
+  module:
+    - paragraphs
+id: paragraph.liste_accordeons.default
+targetEntityType: paragraph
+bundle: liste_accordeons
+mode: default
+content:
+  field_accordeons:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+  field_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  translation:
+    weight: 10
+hidden:
+  created: true
+  status: true
+  uid: true

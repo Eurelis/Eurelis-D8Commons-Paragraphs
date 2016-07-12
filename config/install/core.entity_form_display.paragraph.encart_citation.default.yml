@@ -1,0 +1,33 @@
+uuid: 0097f244-a152-4ec3-91d6-b5891e59ef30
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.encart_citation.field_citation
+    - field.field.paragraph.encart_citation.field_title
+    - paragraphs.paragraphs_type.encart_citation
+id: paragraph.encart_citation.default
+targetEntityType: paragraph
+bundle: encart_citation
+mode: default
+content:
+  field_citation:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  translation:
+    weight: 10
+hidden:
+  created: true
+  status: true
+  uid: true
