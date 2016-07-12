@@ -1,0 +1,61 @@
+uuid: fbc96894-c0d2-4c7c-865a-c9aab9716e90
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texte_illustre.field_illustration
+    - field.field.paragraph.texte_illustre.field_position_image
+    - field.field.paragraph.texte_illustre.field_subtitle
+    - field.field.paragraph.texte_illustre.field_text
+    - field.field.paragraph.texte_illustre.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.texte_illustre
+  module:
+    - image
+    - text
+id: paragraph.texte_illustre.default
+targetEntityType: paragraph
+bundle: texte_illustre
+mode: default
+content:
+  field_illustration:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_position_image:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_text:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  translation:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true
