@@ -1,0 +1,77 @@
+<?php
+
+use Drupal\image\Entity\ImageStyle;
+
+/**
+ * Implements template_preprocess_paragraphs().
+ */
+function paragraphs_commons_preprocess_paragraph__liste_accordeons(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $variables['title'] = !$paragraph->field_title->isEmpty() ? $paragraph->field_title->value : '';
+  $variables['subtitle'] = !$paragraph->field_subtitle->isEmpty() ? $paragraph->field_subtitle->value : '';
+  // load all accordeons
+  $accordeons_entities = $paragraph->get('field_accordeons')->referencedEntities();
+  if ($accordeons_entities) {
+    $liste_accordeons = [];
+    $index = 0;
+    foreach ($accordeons_entities as $accordeon) {
+      $liste_accordeons[$index]['title'] = $accordeon->field_title->value;
+      $liste_accordeons[$index]['text'] = $accordeon->field_text->value;
+      $index++;
+    }
+    $variables['liste_accordeons'] = $liste_accordeons;
+  }
+}
+
+/**
+ * Implements template_preprocess_paragraphs().
+ */
+function paragraphs_commons_preprocess_paragraph__encart_citation(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $variables['title'] = !$paragraph->field_title->isEmpty() ? $paragraph->field_title->value : '';
+  $variables['citation'] = $paragraph->field_citation->value;
+}
+
+/**
+ * Implements template_preprocess_paragraphs().
+ */
+function paragraphs_commons_preprocess_paragraph__texte_illustre(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $variables['title'] = !$paragraph->field_title->isEmpty() ? $paragraph->field_title->value : '';
+  $variables['subtitle'] = !$paragraph->field_subtitle->isEmpty() ? $paragraph->field_subtitle->value : '';
+  $variables['text'] = $paragraph->field_text->value;
+  $variables['class_position'] = $paragraph->field_position_image->value == 'gauche' ? 'imgLeft' : 'imgRight';
+  if (!$paragraph->field_illustration->isEmpty()) {
+    // generate URL of styled image
+    $style = ImageStyle::load('large');
+    $uri = $style->buildUrl($paragraph->field_illustration->entity->getFileUri());
+    $variables['illustration'] = $uri;
+  }
+}
+
+/**
+ * Implements template_preprocess_paragraphs().
+ */
+function paragraphs_commons_preprocess_paragraph__liste_documents(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $variables['title'] = !$paragraph->field_title->isEmpty() ? $paragraph->field_title->value : '';
+  // load all documents
+  $documents_entities = $paragraph->get('field_document')->referencedEntities();
+  if ($documents_entities) {
+    $liste_documents = [];
+    $field_document = $paragraph->toArray()['field_document'];
+    $index = 0;
+    foreach ($documents_entities as $document) {
+      $liste_documents[$index]['size'] = format_size($document->getSize())->render();
+      $liste_documents[$index]['url'] = file_create_url($document->getFileUri());
+      $liste_documents[$index]['mime'] = $document->getMimeType();
+      // The description being related to field_document and not the file , we loop back to recover
+      foreach ($field_document as $doc) {
+        if ($doc['target_id'] == $document->id())
+          $liste_documents[$index]['description'] = $doc['description'] ? $doc['description'] : $document->getFileName();
+      }
+      $index++;
+    }
+    $variables['liste_documents'] = $liste_documents;
+  }
+}
