@@ -14,7 +14,7 @@ bundle: texte_illustre
 label: 'Position Image'
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value:
   -
     value: gauche

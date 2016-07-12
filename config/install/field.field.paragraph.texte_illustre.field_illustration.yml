@@ -6,7 +6,6 @@ dependencies:
     - field.storage.paragraph.field_illustration
     - paragraphs.paragraphs_type.texte_illustre
   module:
-    - content_translation
     - image
 third_party_settings:
   content_translation:
@@ -21,7 +20,7 @@ bundle: texte_illustre
 label: Illustration
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

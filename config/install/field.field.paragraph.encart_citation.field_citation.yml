@@ -12,7 +12,7 @@ bundle: encart_citation
 label: Citation
 description: 'Ne pas mettre les guillemets, il s''ajouterons automatiquement.'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
