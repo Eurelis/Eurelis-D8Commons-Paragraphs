@@ -1,0 +1,16 @@
+uuid: f07915f8-c7a5-4040-b786-7ff8fb63212c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.encart_citation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: paragraph.encart_citation
+target_entity_type_id: paragraph
+target_bundle: encart_citation
+default_langcode: site_default
+language_alterable: true

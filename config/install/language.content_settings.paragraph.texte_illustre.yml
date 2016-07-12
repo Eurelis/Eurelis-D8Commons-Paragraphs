@@ -1,0 +1,16 @@
+uuid: 73dd1565-efee-4c94-a05b-098534017e3e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.texte_illustre
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: paragraph.texte_illustre
+target_entity_type_id: paragraph
+target_bundle: texte_illustre
+default_langcode: site_default
+language_alterable: true

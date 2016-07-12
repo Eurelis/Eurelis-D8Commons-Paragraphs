@@ -1,0 +1,16 @@
+uuid: 62649544-95e9-45a2-a382-ac9cde7c5eeb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.liste_documents
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: paragraph.liste_documents
+target_entity_type_id: paragraph
+target_bundle: liste_documents
+default_langcode: site_default
+language_alterable: true
