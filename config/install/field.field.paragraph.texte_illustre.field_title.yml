@@ -1,0 +1,19 @@
+uuid: 7adead6f-ff10-4f78-852b-e3fca680dfed
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.texte_illustre
+id: paragraph.texte_illustre.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: texte_illustre
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+uuid: 58053154-417d-46a7-8e22-6c25f1f21563
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: u_smZAf0YqZUrW_E7cJ_b5vz5lXD5Y1ouQa1Yvi0qWo
+id: texte_illustre
+label: 'Texte illustré'

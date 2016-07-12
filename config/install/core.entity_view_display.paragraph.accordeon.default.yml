@@ -1,0 +1,31 @@
+uuid: 3565aded-f72d-4460-ac6b-84533cb13606
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordeon.field_text
+    - field.field.paragraph.accordeon.field_title
+    - paragraphs.paragraphs_type.accordeon
+  module:
+    - text
+id: paragraph.accordeon.default
+targetEntityType: paragraph
+bundle: accordeon
+mode: default
+content:
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

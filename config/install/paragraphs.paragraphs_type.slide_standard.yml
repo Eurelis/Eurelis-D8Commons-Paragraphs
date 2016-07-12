@@ -1,0 +1,6 @@
+uuid: f57616e4-bd76-486c-be9e-0b9f049ff267
+langcode: fr
+status: true
+dependencies: {  }
+id: slide_standard
+label: 'Slide Standard'

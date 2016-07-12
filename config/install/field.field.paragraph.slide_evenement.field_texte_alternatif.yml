@@ -1,0 +1,19 @@
+uuid: 937483b1-fbc7-4790-b8a3-18bd0349d2c4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texte_alternatif
+    - paragraphs.paragraphs_type.slide_evenement
+id: paragraph.slide_evenement.field_texte_alternatif
+field_name: field_texte_alternatif
+entity_type: paragraph
+bundle: slide_evenement
+label: 'Texte alternatif'
+description: 'Ce texte sera affiché s''il n''y a plus d''évènement à une date supérieure à la date du jour à afficher'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

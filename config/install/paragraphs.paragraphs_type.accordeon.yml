@@ -1,0 +1,8 @@
+uuid: 077fc582-6eb5-4e2c-acaa-e1b7e1b33798
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4XUcndufU1mIVGzFPR-EvR5sryt8wnT6pGu2CtbHLFE
+id: accordeon
+label: Accordéon

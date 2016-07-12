@@ -1,0 +1,31 @@
+uuid: b35bdf90-ecb1-428f-bded-f0577c0ccbf0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.liste_documents.field_document
+    - field.field.paragraph.liste_documents.field_title
+    - paragraphs.paragraphs_type.liste_documents
+  module:
+    - file
+id: paragraph.liste_documents.default
+targetEntityType: paragraph
+bundle: liste_documents
+mode: default
+content:
+  field_document:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

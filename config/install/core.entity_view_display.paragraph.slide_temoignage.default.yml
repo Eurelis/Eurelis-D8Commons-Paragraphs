@@ -1,0 +1,32 @@
+uuid: 27c654d4-a0e4-45d9-bf98-9a7827bc7997
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide_temoignage.field_mode_auto
+    - field.field.paragraph.slide_temoignage.field_temoignage
+    - paragraphs.paragraphs_type.slide_temoignage
+id: paragraph.slide_temoignage.default
+targetEntityType: paragraph
+bundle: slide_temoignage
+mode: default
+content:
+  field_mode_auto:
+    weight: 1
+    label: above
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+  field_temoignage:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+hidden:
+  created: true
+  uid: true

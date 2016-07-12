@@ -1,0 +1,71 @@
+uuid: 2c0f4336-9781-4eff-ab47-5c1075b594bc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide_actualite.field_auteur
+    - field.field.paragraph.slide_actualite.field_date_publication
+    - field.field.paragraph.slide_actualite.field_lien
+    - field.field.paragraph.slide_actualite.field_mode_auto
+    - field.field.paragraph.slide_actualite.field_resume
+    - field.field.paragraph.slide_actualite.field_title
+    - paragraphs.paragraphs_type.slide_actualite
+  module:
+    - datetime
+    - link
+id: paragraph.slide_actualite.default
+targetEntityType: paragraph
+bundle: slide_actualite
+mode: default
+content:
+  field_auteur:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_date_publication:
+    weight: 3
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+  field_lien:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_mode_auto:
+    weight: 4
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+  field_resume:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

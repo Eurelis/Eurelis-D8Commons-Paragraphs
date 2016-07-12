@@ -1,0 +1,8 @@
+uuid: c159436f-14d6-4865-be69-2b7a9dc3299b
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aLWNSzAU5B--CvKmyyg9BtOzsCIWYu0cnWbzd-QwCm0
+id: section_expertises
+label: 'Section d''expertises'

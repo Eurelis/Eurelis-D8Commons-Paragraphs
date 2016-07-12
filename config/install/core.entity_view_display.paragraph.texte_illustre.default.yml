@@ -1,0 +1,58 @@
+uuid: ae252d1f-ca73-41cb-b4da-117163055306
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texte_illustre.field_illustration
+    - field.field.paragraph.texte_illustre.field_position_image
+    - field.field.paragraph.texte_illustre.field_subtitle
+    - field.field.paragraph.texte_illustre.field_text
+    - field.field.paragraph.texte_illustre.field_title
+    - image.style.illustration
+    - paragraphs.paragraphs_type.texte_illustre
+  module:
+    - image
+    - options
+    - text
+id: paragraph.texte_illustre.default
+targetEntityType: paragraph
+bundle: texte_illustre
+mode: default
+content:
+  field_illustration:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: illustration
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_position_image:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_subtitle:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_title:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

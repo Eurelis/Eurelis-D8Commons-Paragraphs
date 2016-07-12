@@ -1,0 +1,19 @@
+uuid: 31480ccc-7d9c-4c55-b6fb-902c393b8a37
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.texte_illustre
+id: paragraph.texte_illustre.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: texte_illustre
+label: Sous-titre
+description: 'Ce champs ne s''affichera pas si vous choisissez de mettre une illustration.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

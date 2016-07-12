@@ -1,0 +1,8 @@
+uuid: 296e73cc-464f-4bb2-8ce8-7037b5a8b671
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2jwkAYcg-EBgxyGTPsrpfA5B-EkL81pw5mG51OKwS28
+id: liste_documents
+label: 'Liste de documents'

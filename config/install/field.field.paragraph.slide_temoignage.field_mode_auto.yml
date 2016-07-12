@@ -1,0 +1,23 @@
+uuid: 22f95758-3557-4e4c-8c7c-b097c488da45
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mode_auto
+    - paragraphs.paragraphs_type.slide_temoignage
+id: paragraph.slide_temoignage.field_mode_auto
+field_name: field_mode_auto
+entity_type: paragraph
+bundle: slide_temoignage
+label: 'Mode auto'
+description: 'En activant le mode auto, le dernier témoignage en date sera utilisé. Laissez décoché pour choisir vous même quel témoignage sera affiché.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

@@ -1,0 +1,27 @@
+uuid: 5b810e6d-6883-486b-88b0-a75cc938695d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_document
+    - paragraphs.paragraphs_type.liste_documents
+  module:
+    - file
+id: paragraph.liste_documents.field_document
+field_name: field_document
+entity_type: paragraph
+bundle: liste_documents
+label: Document
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

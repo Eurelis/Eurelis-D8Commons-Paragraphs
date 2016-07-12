@@ -1,0 +1,21 @@
+uuid: 8128d20a-c942-4d62-96aa-6c8ab4730200
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.texte_illustre
+  module:
+    - text
+id: paragraph.texte_illustre.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: texte_illustre
+label: Texte
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

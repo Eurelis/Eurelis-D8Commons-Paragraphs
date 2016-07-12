@@ -1,0 +1,23 @@
+uuid: 1dd1ee69-8ff3-4593-aab3-6529aa47c717
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position_image
+    - paragraphs.paragraphs_type.texte_illustre
+  module:
+    - options
+id: paragraph.texte_illustre.field_position_image
+field_name: field_position_image
+entity_type: paragraph
+bundle: texte_illustre
+label: 'Position Image'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: gauche
+default_value_callback: ''
+settings: {  }
+field_type: list_string

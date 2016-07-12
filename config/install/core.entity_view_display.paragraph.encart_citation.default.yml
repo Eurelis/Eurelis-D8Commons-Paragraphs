@@ -1,0 +1,29 @@
+uuid: fa4a10a2-64cc-4400-ac67-7e322c8c7628
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.encart_citation.field_citation
+    - field.field.paragraph.encart_citation.field_title
+    - paragraphs.paragraphs_type.encart_citation
+id: paragraph.encart_citation.default
+targetEntityType: paragraph
+bundle: encart_citation
+mode: default
+content:
+  field_citation:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

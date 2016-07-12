@@ -1,0 +1,19 @@
+uuid: f840fbe6-8e78-4184-96a2-77e6935b8dae
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_auteur
+    - paragraphs.paragraphs_type.slide_actualite
+id: paragraph.slide_actualite.field_auteur
+field_name: field_auteur
+entity_type: paragraph
+bundle: slide_actualite
+label: Auteur
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

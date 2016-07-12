@@ -1,0 +1,8 @@
+uuid: c81720f1-980d-4efa-a0d1-a39271af9d8a
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qzRGONt3EIruj5E3VJARmAqbnudmZld3n8DJbYI9Zsw
+id: picto_titre
+label: 'Picto titre'

@@ -1,0 +1,19 @@
+uuid: d950a0b8-a7ab-471b-ae35-695873732a55
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.slide_actualite
+id: paragraph.slide_actualite.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: slide_actualite
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

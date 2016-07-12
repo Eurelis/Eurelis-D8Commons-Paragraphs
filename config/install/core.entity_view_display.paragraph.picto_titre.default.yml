@@ -1,0 +1,44 @@
+uuid: a84b14b7-58b8-4acd-ae08-d721b29d75be
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.picto_titre.field_lien
+    - field.field.paragraph.picto_titre.field_picto
+    - field.field.paragraph.picto_titre.field_title
+    - paragraphs.paragraphs_type.picto_titre
+  module:
+    - file
+    - link
+id: paragraph.picto_titre.default
+targetEntityType: paragraph
+bundle: picto_titre
+mode: default
+content:
+  field_lien:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_picto:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

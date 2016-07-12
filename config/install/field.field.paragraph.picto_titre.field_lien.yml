@@ -1,0 +1,23 @@
+uuid: a9dfe773-ead7-4b1c-a4d3-e0788918d5d6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lien
+    - paragraphs.paragraphs_type.picto_titre
+  module:
+    - link
+id: paragraph.picto_titre.field_lien
+field_name: field_lien
+entity_type: paragraph
+bundle: picto_titre
+label: Lien
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

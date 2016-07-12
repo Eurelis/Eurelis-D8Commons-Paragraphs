@@ -1,0 +1,8 @@
+uuid: 83da6037-2c82-4b26-9627-104edecd81de
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: WZWASDwNF1Q6sggKhfvveVs7FF9_6IlGTqfRHW7fGpI
+id: liste_accordeons
+label: 'Liste d''accordéons'

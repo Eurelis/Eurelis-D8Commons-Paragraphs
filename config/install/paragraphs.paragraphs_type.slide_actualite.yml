@@ -1,0 +1,6 @@
+uuid: ef7d8e82-824a-4181-b25c-4c7a79e0f3da
+langcode: fr
+status: true
+dependencies: {  }
+id: slide_actualite
+label: 'Slide Actualité'

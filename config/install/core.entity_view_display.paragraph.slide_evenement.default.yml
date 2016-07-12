@@ -1,0 +1,39 @@
+uuid: 37a969f1-99a9-4f68-9e56-77dd0aac67f3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide_evenement.field_evenement
+    - field.field.paragraph.slide_evenement.field_mode_auto
+    - field.field.paragraph.slide_evenement.field_texte_alternatif
+    - paragraphs.paragraphs_type.slide_evenement
+id: paragraph.slide_evenement.default
+targetEntityType: paragraph
+bundle: slide_evenement
+mode: default
+content:
+  field_evenement:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_mode_auto:
+    weight: 0
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+  field_texte_alternatif:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+hidden:
+  created: true
+  uid: true

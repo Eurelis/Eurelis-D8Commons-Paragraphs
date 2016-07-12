@@ -1,0 +1,19 @@
+uuid: 5b8bc6c0-7b27-4a33-8995-33fa02b27ca5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.liste_accordeons
+id: paragraph.liste_accordeons.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: liste_accordeons
+label: Sous-titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

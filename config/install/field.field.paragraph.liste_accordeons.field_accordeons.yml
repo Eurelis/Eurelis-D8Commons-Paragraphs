@@ -1,0 +1,33 @@
+uuid: b9f13d21-710a-49c4-93ab-651bbc3e2935
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordeons
+    - paragraphs.paragraphs_type.accordeon
+    - paragraphs.paragraphs_type.liste_accordeons
+  module:
+    - entity_reference_revisions
+id: paragraph.liste_accordeons.field_accordeons
+field_name: field_accordeons
+entity_type: paragraph
+bundle: liste_accordeons
+label: Accordéons
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordeon: accordeon
+    target_bundles_drag_drop:
+      accordeon:
+        enabled: true
+        weight: 3
+      liste_accordeons:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

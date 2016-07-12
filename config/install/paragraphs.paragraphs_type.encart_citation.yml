@@ -1,0 +1,8 @@
+uuid: f5995567-a28f-499b-9001-e79afa6cb976
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YTByt3-Z7gMnDBD6rFDqBUxuI9Q9f-QX7sFbcsZhgMk
+id: encart_citation
+label: 'Encart Citation'
