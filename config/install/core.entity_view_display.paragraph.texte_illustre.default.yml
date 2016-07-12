@@ -8,7 +8,7 @@ dependencies:
     - field.field.paragraph.texte_illustre.field_subtitle
     - field.field.paragraph.texte_illustre.field_text
     - field.field.paragraph.texte_illustre.field_title
-    - image.style.illustration
+    - image.style.large
     - paragraphs.paragraphs_type.texte_illustre
   module:
     - image
@@ -23,7 +23,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: illustration
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image
