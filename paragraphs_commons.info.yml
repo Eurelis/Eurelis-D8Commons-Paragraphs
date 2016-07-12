@@ -1,6 +1,6 @@
 name: Paragraphs Commons
 type: module
-description: 'A basic set of Drupal 8 paragraphs used in most of our client sites'
+description: 'A basic set of Drupal 8 paragraphs used in most of Eurelis client sites.'
 core: 8.x
 package: Paragraphs
 dependencies:

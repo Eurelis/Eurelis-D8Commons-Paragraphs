@@ -1,6 +1,6 @@
 {
   "name": "eurelis/paragraphs_commons",
-  "description": "A basic set of Drupal 8 paragraphs used in most of our client sites.",
+  "description": "A basic set of Drupal 8 paragraphs used in most of Eurelis client sites.",
   "type": "drupal-module",
   "license": "GPL-2.0+",
   "authors": [
@@ -12,7 +12,6 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "drupal/core": "~8.1",
-    "drupal/paragraphs": "1.0-rc5"
+    "drupal/paragraphs": "^1.0"
   }
 }
