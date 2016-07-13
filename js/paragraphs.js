@@ -19,5 +19,5 @@
 		// Functions
 		accordionHandler();
 	});
-	
+
 })(jQuery, Drupal);
