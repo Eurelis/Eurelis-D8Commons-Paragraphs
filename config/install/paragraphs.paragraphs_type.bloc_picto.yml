@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: qzRGONt3EIruj5E3VJARmAqbnudmZld3n8DJbYI9Zsw
-id: picto_titre
-label: 'Picto titre'
+id: bloc_picto
+label: 'Bloc Picto'

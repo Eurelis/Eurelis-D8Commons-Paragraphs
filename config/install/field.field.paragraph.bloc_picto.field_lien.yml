@@ -4,13 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_lien
-    - paragraphs.paragraphs_type.picto_titre
+    - paragraphs.paragraphs_type.bloc_picto
   module:
     - link
 id: paragraph.picto_titre.field_lien
 field_name: field_lien
 entity_type: paragraph
-bundle: picto_titre
+bundle: bloc_picto
 label: Lien
 description: ''
 required: true
