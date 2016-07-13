@@ -3,9 +3,9 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.paragraph.picto_titre.field_lien
-    - field.field.paragraph.picto_titre.field_picto
-    - field.field.paragraph.picto_titre.field_title
+    - field.field.paragraph.bloc_picto.field_lien
+    - field.field.paragraph.bloc_picto.field_picto
+    - field.field.paragraph.bloc_picto.field_title
     - paragraphs.paragraphs_type.bloc_picto
   module:
     - file
