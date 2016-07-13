@@ -1,0 +1,44 @@
+uuid: 97209d2a-540e-40c7-aa15-3728661f112b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.liste_blocs_pictos.field_bloc_picto
+    - field.field.paragraph.liste_blocs_pictos.field_subtitle
+    - field.field.paragraph.liste_blocs_pictos.field_title
+    - paragraphs.paragraphs_type.liste_blocs_pictos
+  module:
+    - paragraphs
+id: paragraph.liste_blocs_pictos.default
+targetEntityType: paragraph
+bundle: liste_blocs_pictos
+mode: default
+content:
+  field_bloc_picto:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+  field_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

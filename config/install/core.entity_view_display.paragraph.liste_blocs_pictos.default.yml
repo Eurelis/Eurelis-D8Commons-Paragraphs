@@ -1,0 +1,41 @@
+uuid: f3277f28-7ddf-4816-97f9-3e5aae3acba8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.liste_blocs_pictos.field_bloc_picto
+    - field.field.paragraph.liste_blocs_pictos.field_subtitle
+    - field.field.paragraph.liste_blocs_pictos.field_title
+    - paragraphs.paragraphs_type.liste_blocs_pictos
+  module:
+    - entity_reference_revisions
+id: paragraph.liste_blocs_pictos.default
+targetEntityType: paragraph
+bundle: liste_blocs_pictos
+mode: default
+content:
+  field_bloc_picto:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_subtitle:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

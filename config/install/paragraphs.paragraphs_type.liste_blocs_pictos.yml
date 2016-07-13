@@ -1,0 +1,6 @@
+uuid: 9f816d1b-abf6-45ec-be3d-aa6f8dc61136
+langcode: fr
+status: true
+dependencies: {  }
+id: liste_blocs_pictos
+label: 'Liste de blocs avec pictos'

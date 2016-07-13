@@ -1,0 +1,19 @@
+uuid: d3f1fa22-a725-46fd-a892-60e20d8c1eb6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.liste_blocs_pictos
+id: paragraph.liste_blocs_pictos.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: liste_blocs_pictos
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
