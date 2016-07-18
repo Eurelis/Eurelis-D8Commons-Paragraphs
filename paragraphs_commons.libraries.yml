@@ -1,0 +1,7 @@
+paragraphs:
+  version: 1.x
+  js:
+    js/paragraphs.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
